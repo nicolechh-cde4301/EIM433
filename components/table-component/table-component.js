@@ -1,5 +1,4 @@
 //template
-
 new gridjs.Grid({
   columns: ["Name", "Email", "Phone Number"],
   data: [
@@ -11,55 +10,20 @@ new gridjs.Grid({
   ],
 }).render(document.getElementById("table-1"));
 
-class TableComponent extends HTMLElement {
-  static get observedAttributes() {
-    return ["subtitle"];
-  }
-
-  constructor() {
-    super();
-    this.attachShadow({ mode: "open" });
-  }
-
-  connectedCallback() {
-    this.render();
-  }
-
-  attributeChangedCallback(name, _, newValue) {
-    this[name] = newValue;
-  }
-
-  render() {
-    const div = document.createElement("div");
-    div.innerHTML = `
-    <slot></slot>
-    <sub>${this.subtitle}</sub>
-    <style>
-      :host {
-        display: block;
-        text-align: center;
-      }
-
-      sub {
-        font-size: 1rem;
-        font-style: italic;
-      }
-    </style>
-  `;
-
-    this.shadowRoot.appendChild(div);
-  }
-}
-
-customElements.define("table-component", TableComponent);
-
 // Table 1
 new gridjs.Grid({
-  columns: ["Stage", "Step", "Purpose"],
+  columns: [
+    "Stage", "Step", 
+    {
+      name: "Purpose",
+      //formatter: (cell) => html(cell.replace("/\n", "<br>"))
+    }
+  ],
   data: [
-    ["Pre-operative (Set-up)", "1. Insertion of endotracheal tube (ETT) into patient's trachea", "1. Intubation of patient (for all surgeries),2. Positioning of IONM recording electrodes adjacent to vocalis muscle"],
-    ["Pre-operative (Set-up)", "mark@gmail.com", "(01) 22 888 4444"],
-    ["Intraoperative (Protocol)", "eoin@gmail.com", "0097 22 654 00033"],
+    ["Pre-operative (Set-up)", "1. Insertion of endotracheal tube (ETT) into patient's trachea", "1. Intubation of patient (for all surgeries)\n2. Positioning of IONM recording electrodes adjacent to vocalis muscle"],
+    ["Pre-operative (Set-up)", "2. Set up of IONM machine", "Proper connection of recording electrodes, stimulator probe and ground electrodes to interface"],
+    ["Intraoperative (Protocol)", "3. Stimulation of RLN", "Probe for the functional intactness of RLN at a particular point of the tissue, which will stimulate action potential in vocalis muscle."],
+    ["Intraoperative (Protocol)", "4. Interpretation of signal feedback", "The detected EMG signal picked up by the recording electrodes at the vocalis muscle through both a visual waveform on the monitor and an audible noise informing the surgeon on the functional state of the RLN. The threshold for detection of RLN functional intactness is 100 uV: Amplitude > 100 uV: Nerve is functionally intact, Amplitude < 100 uV: Nerve is not functionally intact"]
   ],
 }).render(document.getElementById("table1"));
 
