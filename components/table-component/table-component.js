@@ -16,14 +16,14 @@ new gridjs.Grid({
     "Stage", "Step", 
     {
       name: "Purpose",
-      //formatter: (cell) => html(cell.replace("/\n", "<br>"))
+      formatter: (cell) => gridjs.html(cell.replace(/\n/g, "<br>"))
     }
   ],
   data: [
-    ["Pre-operative (Set-up)", "1. Insertion of endotracheal tube (ETT) into patient's trachea", "1. Intubation of patient (for all surgeries)\n2. Positioning of IONM recording electrodes adjacent to vocalis muscle"],
+    ["Pre-operative (Set-up)", "1. Insertion of endotracheal tube (ETT) into patient's trachea", "1. Intubation of patient (for all surgeries)\n\n2. Positioning of IONM recording electrodes adjacent to vocalis muscle"],
     ["Pre-operative (Set-up)", "2. Set up of IONM machine", "Proper connection of recording electrodes, stimulator probe and ground electrodes to interface"],
     ["Intraoperative (Protocol)", "3. Stimulation of RLN", "Probe for the functional intactness of RLN at a particular point of the tissue, which will stimulate action potential in vocalis muscle."],
-    ["Intraoperative (Protocol)", "4. Interpretation of signal feedback", "The detected EMG signal picked up by the recording electrodes at the vocalis muscle through both a visual waveform on the monitor and an audible noise informing the surgeon on the functional state of the RLN. The threshold for detection of RLN functional intactness is 100 uV: Amplitude > 100 uV: Nerve is functionally intact, Amplitude < 100 uV: Nerve is not functionally intact"]
+    ["Intraoperative (Protocol)", "4. Interpretation of signal feedback", "The detected EMG signal picked up by the recording electrodes at the vocalis muscle through both a visual waveform on the monitor and an audible noise informing the surgeon on the functional state of the RLN.\n\nThe threshold for detection of RLN functional intactness is 100 uV.\n\nAmplitude > 100 uV: Nerve is functionally intact\nAmplitude < 100 uV: Nerve is not functionally intact"]
   ],
 }).render(document.getElementById("table1"));
 
