@@ -43,12 +43,12 @@
         year="National University of Singapore"></team-member>
       <team-member avatar="assets/nicole.jpg" name="Chong Hui Hsuen Nicole" department="Biomedical Engineering"
         year="National University of Singapore"></team-member>
-      <team-member avatar="assets/redranger.png" name="Zerina Rahic" department="Medicine"
+      <!-- <team-member avatar="assets/redranger.png" name="Zerina Rahic" department="Medicine"
         year="Duke-NUS Medical School"></team-member>
       <team-member avatar="assets/pinkranger.png" name="Lucien Leong Guang Shian" department="Medicine"
         year="National University of Singapore"></team-member>
       <team-member avatar="assets/blueranger.png" name="Nawaphan Jedjomnongkit" department="Business Admistration (Masters)"
-        year="National University of Singapore"></team-member>
+        year="National University of Singapore"></team-member>-->
     </div>
 
     <!-- This is a divide from the shoelace library for aesthetic purpose -->
@@ -131,68 +131,38 @@
       <div id="sub-section-1-header-1">
         <h3>1.1 Context</h3>
         <p>
-          The thyroid gland is a butterfly-shaped endocrine gland that releases 
-          hormones to control the body’s metabolism, energy and growth. The removal 
-          of the thyroid gland (thyroidectomy) is a surgical intervention offered to patients 
-          with thyroid cancers, goiters, Graves disease and thyroid nodules, with thyroid 
-          cancer accounting for the bulk of cases due to its high prevalence. Thyroid cancer 
-          is the second most common cancer in females between 25 and 49 years old (NCCS, 2026), 
-          and almost 95% of cases require surgery as an effective treatment option (Gomez-Saiz, 
-          2013). The recurrent laryngeal nerve (RLN) (Figure 1) is an important nerve that 
-          controls voice, breathing and swallowing functions through activation of the vocalis muscle, 
-          and is a key nerve at risk during thyroidectomies due its close positioning posterior to the 
-          thyroid with an injury rate of about 8.2% in Singapore (Soong et al., 2026). The presence of 
-          large tumours in thyroid cancer can obstruct the surgeon’s field view of the RLN, increasing 
-          the risk of injury. 
+          The thyroid gland controls the body’s metabolism, energy and growth, and is removed via thyroidectomies for patients with thyroid cancers, goiters, Graves disease and thyroid nodules. Thyroid cancer accounts for the bulk of cases due to its high prevalence, as the second most common cancer in females between 25 and 49 years old (NCCS, 2026), and almost 95% of cases requiring surgery as an effective treatment option (Gomez-Saiz, 2013). The recurrent laryngeal nerve (RLN) is an important nerve that controls voice, breathing and swallowing functions through activation of the vocalis muscle. It is a key nerve at risk during thyroidectomies due its close positioning posterior to the thyroid, with an injury rate of about 8.2% in Singapore (Soong et al., 2026). The presence of large tumours in thyroid cancer can obstruct the surgeon’s field view of the RLN, increasing the risk of injury. 
         </p>
         <image-component tag="image" source="assets/thyroid.jpg"
           subtitle="Figure 1: Anatomy of thyroid"></image-component>
         <p>
-          RLN injuries can be temporary or permanent, with a permanent injury rate of 1%, and can either be unilateral or bilateral. While unilateral RLN injury can cause swallowing difficulties and voice changes (Culp & Patel, 2023), bilateral injury can cause serious complications like respiratory disease (Culp & Patel, 2023). RLN injury can be classified into two subtypes: type I (segmental injury) or type II (global injury). Type I injuries account for 70% of cases, and are often caused by clamping, traction, compression or thermal injury and have the potential to be corrected intraoperatively if a clip, suture, vessel or fibrotic band entrapping the nerve at this point is removed on time (Wu et al., 2014).
+          RLN injuries can be temporary or permanent, with a permanent injury rate of 1%, and can either be unilateral or bilateral. While unilateral RLN injury can cause swallowing difficulties and voice changes (Culp & Patel, 2023), bilateral injury can cause serious complications like respiratory distress (Culp & Patel, 2023). RLN injury can be classified into two subtypes: type I (segmental injury) or type II (global injury). Type I injuries account for 70% of cases, are often caused by clamping, traction, compression or thermal injury, and have the potential to be corrected intraoperatively if the clip, suture, vessel or fibrotic band entrapping the nerve is removed on time (Wu et al., 2014).
         </p>
         <p>
-          Intra-operative nerve monitoring (IONM) system is during thyroidectomies 
-          to guide surgical decision making during thyroidectomies by allowing for RLN 
-          identification and determination of functional intactness, for surgeons to 
-          preserve the RLN or to change their operative course if they determine 
-          the nerve to be damaged. To date, there is only one IONM system that is 
-          widely distributed worldwide — Medtronic’s Neural Integrity Monitor 
-          (NIM), with the most recent model being the NIM Vital. Since the RLN
-           controls the vocalis muscle, IONM determines RLN functional intactness 
-           by determining the RLN’s ability to stimulate the vocalis muscle. This 
-           is achieved by 1) electrical stimulation of the RLN and 2) measurement of 
-           the action potential fired by the vocalis muscle as a result of RLN stimulation. 
-           The mode of IONM commonly used in Singaporean hospitals is intermittent-IONM 
-           (i-IONM). The i-IONM set-up and protocol (Figure 2) is detailed below:
+          Intra-operative nerve monitoring (IONM) systems guide surgical decision making during thyroidectomies through determination of RLN identity and functional intactness, so surgeons can preserve the RLN or to change their operative course accordingly. To date, there is only one IONM system that is widely distributed worldwide — Medtronic’s Neural Integrity Monitor (NIM). Since the RLN controls the vocalis muscle, IONM determines RLN functional intactness by 1) electrical stimulation of the RLN and 2) measurement of the action potential fired by the vocalis muscle as a result of RLN stimulation. The mode of IONM commonly used in Singaporean hospitals is intermittent-IONM (i-IONM). The i-IONM set-up and protocol is detailed below:
         </p>
-          <table-component subtitle="Table 1: IONM Workflow">
-          <div id="table1"></div>
-        </table-component>
+        <image-component tag="image" source="assets/ionm_workflow1.png"
+          subtitle="Table showing IONM pre-operative set-up and protocol"></image-component>
         <image-component tag="image" source="assets/ionm_workflow.png"
           subtitle="Figure 2: IONM workflow"></image-component>
       </div>
 
       <div id="sub-section-1-header-2">
         <h3>1.2 Overview of problem</h3>
+        <p><u>1.2.1 Lack of uptake of c-IONM</u></p>
         <p>
-          A key issue in i-IONM is its retrospective nature of nerve monitoring, 
-          as it requires the surgeon to manually switch between their dissection 
-          instruments and the stimulator probe to check for RLN function. These 
-          checking points are highly dependent on the surgeon’s choice of timepoints 
-          and frequency to probe for RLN function, and nerve injury can easily be 
-          missed between these checking points. In Singapore, the use of i-IONM 
-          shows no statistical difference in the RLN injury rate (Leow et al., 2020). 
-          Considering how RLN injury can be prevented with timely intervention (Wu et 
-          al., 2014), i-IONM’s inability to allow for early detection of RLN compromise
-           for prospective prevention of nerve injury is a huge concern. 
+          A key issue in i-IONM is its retrospective nature, as it requires the surgeon to manually switch between their dissection instruments and the stimulator probe to check for RLN function. These checking points are highly dependent on the surgeon’s choice of timepoints and frequency in probing for RLN function, and nerve injury can easily be missed between these isolated checking points. In Singapore, the use of i-IONM shows no statistical difference in the RLN injury rate (Leow et al., 2020). Considering how RLN injury can be prevented with timely intervention (Wu et al., 2014), i-IONM’s inability to allow for early detection of RLN compromise prevents prospective prevention of nerve injury. 
         </p>
         <p>
-          A seemingly clear way to address the retrospective nature of i-IONM exists: 
-          Continuous-IONM (c-IONM) is a variation of IONM that involves stimulation 
-          of RLN through an <a href="https://drive.google.com/file/d/1TiGApB6hK6Mo3IacaKAcCctXU6dvhWt5/view?usp=sharing" target="_blank">
+          A seemingly clear way to this is continuous-IONM (c-IONM), a variation of IONM involving stimulation of RLN through an <a href="https://drive.google.com/file/d/1TiGApB6hK6Mo3IacaKAcCctXU6dvhWt5/view?usp=sharing" target="_blank">
           Automatic Periodic Stimulation (APS) clip electrode that 
           is attached to the vagus nerve</a>, the main branch which the RLN is connected 
-          to. Since this electrode is securely positioned for RLN stimulation 
+          to. 
+        </p>
+        <image-component tag="image" source="assets/vagusnerve.png"
+          subtitle="Figure 3: c-IONM system"></image-component>
+        <p>
+          Since this electrode is securely positioned for RLN stimulation 
           throughout the surgery, it is able to automatically stimulate the RLN and 
           provide feedback on the EMG activity of the vocalis muscle every 2 seconds. 
           However, the adoption of this method has been sparse: a study found that 
@@ -204,6 +174,7 @@
           quote reasons such as the extra step of dissecting the carotid sheath that 
           cause additional surgical risk and inconvenience to the procedure.  
         </p>
+        <p><u>1.2.2 Signal unreliability</u></p>
         <p>
           Aside from the lack of prospective monitoring of nerve intactness, i-IONM also 
           has a low positive predictive value of 63% (Schneider et al., 2017). A common 
@@ -229,43 +200,107 @@
         </p>
         <video-component tag="Noise" source="https://drive.google.com/file/d/1CaMqZi6rkj4GBux4N8ABvUDteIQ_NNvI/view?usp=sharing"
           subtitle="Figure 4. Off-field feedback"></video-component>
-        
       </div>
     </div>
+    <div id="sub-section-1-header-3">
+        <h3>1.3 Root cause analysis</h3>
+        <p>
+          The key reason for surgeons’ use of i-IONM instead of c-IONM despite its benefits are manpower and method factors. The manual nature of intermittent stimulation means that it is unable to prospectively detect changes in nerve function to prevent nerve damage, yet c-IONM involves the extra step of dissecting the carotid sheath to clip the electrode onto the vagus nerve, which presents an additional step. Although some surgeons claim that this presents an additional surgical risk, Dr. Anita Baghawi, a Malaysian doctor whom we spoke to who is a big proponent of c-IONM, claimed that this risk is negligible and all surgeons in her hospital undergo their specialty training using c-IONM. In contrast, Singaporean surgeons who have been doing i-IONM their entire surgical careers would find this extra dissection step unfamiliar and unaligned with the workflows that they have worked with for years. One of our clinical mentors, Dr. Szymon Mikulski, mentioned that although the dissection is quick and easy, Singaporean surgeons simply do not associate this step with their thyroidectomy protocols. This reveals that Head & Neck surgeons in Singapore are risk-averse and highly resistant to taking up new solutions that are not aligned with their pre-existing training and ways of performing surgery.
+        </p>
+        <p>
+          As for signal unreliability, the issue can be broken down into two categories – false loss of signal (LOS) and high levels of noise. LOS stems from three main surface causes (Randolph et al., 2010).
+        </p><br>
+        <p><b>a. Improper contact between ETT recording electrodes and vocalis muscle</b></p>
+        <p>
+          When secure contact between the recording electrodes on the ETT and the vocalis muscle is lost, the IONM system is unable to detect EMG signals from the vocalis muscle. This can be caused by ETT displacement during neck extension (5mm downwards to 16mm upwards) for patient positioning (Tsai et al., 2011) and by surgical maneuvers such as traction that cause shifts in the contact between vocal ligaments and the recording electrodes (Krishna & Nataraj, 2012). We have identified ETT electrode displacement to be a key cause of LOS and contributor to troubleshooting difficulty along with high prevalence of ETT displacement in almost every thyroid surgery. Additionally, because the contact surface is not visible to the surgeon, displacement cannot be easily identified and realignment is done purely by estimation.
+        </p><br>
+        <p><b>b. Improper contact during stimulation</b></p>
+        <p>
+          Wetness in the surgical field caused by blood and edema could result in improper contact between the stimulating electrode and the RLN, impairing its ability to stimulate the vocalis muscle. Wetness can be reduced by suction, absorbent sponges, and hemostatic agents to remove excess blood. 
+        </p><br>
+        <p><b>c. Disconnection of electrodes from interface</b></p>
+        <p>
+          LOS from disconnection of electrodes from the interface is unlikely due to the fact that the interface is secured under the operating table, and can easily be checked with disconnections rectified.
+        </p>
+        <p>
+          The high level of off-field feedback has similar causes to LOS, including the unreliable contact between the ETT electrodes and the vocalis muscle as well as external interference by other medical devices in the operating theatre.
+        </p>
+        <p>
+          The root causes are outlined in the Ishikawa diagram (Figure 5) below.
+        </p>
+        <image-component tag="image" source="assets/ishikawa.png"
+          subtitle="Figure 5: Ishikawa Diagram"></image-component>
+        <p><br>
+          The lack of uptake of c-IONM and signal unreliability are both fundamentally workflow issues. The extra step of carotid sheath dissection creates inertia in uptake of c-IONM, while the insecure positioning of the recording electrodes and inability to easily identify and rectify displacement lead to long troubleshooting time. These considerations have led to our problem statement:
+        </p>
+        <p><u>Enabling surgeons to <b>reliably assess nerve function</b> throughout thyroidectomy, providing <b>timely, actionable feedback</b> while minimising disruptions to <b>existing surgical workflows</b></u></p>
 
+        <p><br>
+          The key terms are defined below:
+        </p>
+        <table-component subtitle="Definitions of key terms">
+          <div id="table2"></div>
+        </table-component>
 
-    <br />
+      </div>
+      <div id="sub-section-1-header-4">
+        <h3>1.4 Stakeholder analysis</h3>
+        <p>
+          We analysed the stakeholders (Figure 6)by determining the decision makers and influencers who would affect the success of our solution and also high power and high interest stakeholders. We found that the key stakeholders are thyroid surgeons, hospital procurement departments, as well as the Health Science Authority, which plays a key role in deciding if our product can enter the market.
+        </p>
+        <image-component tag="image" source="assets/stakeholder.png"
+          subtitle="Figure 6: Stakeholder Analysis"></image-component>
+      </div>
+    
     <br />
     <sl-divider></sl-divider>
     <div>
       <div id="section-header-2">
         <h2>2. Value proposition</h2>
-        <p>
-          To insert
-        </p>
       </div>
 
       <div id="sub-section-2-header-1">
-        <h3>2.1. Customer persona</h3>
+        <h3>2.1. User persona</h3>
+        <image-component tag="image" source="assets/persona.png"
+          subtitle="Figure 7: Persona"></image-component>
         <p>
-          To insert 
+          We modelled our persona (Figure 7) based on one of our clinical mentors, Dr. Joel Lau, who is representative of a senior demographic of surgeons who have already undergone their training as a Head & Neck specialists and routinely use i-IONM and not c-IONM during thyroidectomies. His key gains, pains, and jobs to be done are shown below.
         </p>
+        <image-component tag="image" source="assets/value prop.png"
+          subtitle="Persona"></image-component>
 
-        <!-- This is an example of how you might use the video component -->
-        <video-component tag="rick" source="https://www.youtube.com/embed/dQw4w9WgXcQ"
-          subtitle="Video: Never gonna give you up?"></video-component>
+        
       </div>
 
       <div id="sub-section-2-header-2">
         <h3>2.2. Existing solutions</h3>
         <p>
-          To insert
+          Since IONM has two main components: the stimulation and recording electrodes, different alternatives have been proposed for each of them. Since there is only one main distributor of IONM (Medtronic), with the only competitor, Inomed’s C2 NerveMonitor, having similar functionalities, we have included experimental methods as part of this competitive analysis.
         </p>
 
-        <!-- This is an example of how you might use the table component -->
-        <table-component subtitle="Table: Demo table">
-          <div id="table-1"></div>
-        </table-component>
+        <image-component tag="image" source="assets/stimulating_solutions.png"
+          subtitle="Stimulating electrodes"></image-component>
+        <p>
+          For intermittent stimulation methods, a stand-alone handheld probe can be mobilised independently from the NIM system, with the surgeon assessing RLN function by visual observation of the cricothyroid muscle instead of an EMG signal from the vocalis muscle (Lawson et al., 2020). However this is still manual, intermittent stimulation. Alternatives to the Medtronic APS electrode for c-IONM have also been developed, such as stimulating attachments to dissection instruments like patches (Oh et al., 2021) and rings (Kim et al., 2020) to enable them to serve dual dissection and stimulation functions, with innate stimulating capability (Chiang et al., 2015). However these have high stimulation artefact and risk accidental dissection instead of stimulation respectively. Other promising methods include stimulating the RLN through the laryngeal adductor reflex (LAR) (Sinclair & Tellez, 2024) and trans-tracheally through the pre-insertion of a Medtronic APS into the ETT (Zhang et al., 2020). 
+        </p>
+        <p>
+          For LAR stimulation (Figure 8), one of the two recording electrodes on the ETT is plugged into a stimulation channel instead of a recording channel, allowing it to act as a stimulating electrode to irritate the mucosa and stimulate LAR, a natural reflex involving the RLN where the vocal cords close to prevent entry of foreign bodies into the trachea. 
+        </p>
+        <image-component tag="image" source="assets/LAR.png"
+          subtitle="Figure 8: LAR stimulation"></image-component>
+        <p>
+          For trans-tracheal stimulation (Figure 9), the RLN can be stimulated by an APS electrode inserted into the ETT due to its close proximity to the trachea but its risk to surgery is unknown since trials have only been done to pigs. These methods are both promising ways to introduce c-IONM to change-resistant surgeons, but both have their limitations which will be discussed later in this report.
+        </p>
+        <image-component tag="image" source="assets/TTS.png"
+          subtitle="Figure 9: APS electrode inserted into ETT for trans-tracheal stimulation"></image-component>
+        <p>
+          The high occurrence of ETT electrode displacement has also prompted the development of alternative recording electrodes (Figure 10), such as trans-cricothyroid (Alon & Hinni, 2009), transcartilage (Lee et al., 2021) or intramuscular (Li et al., 2020) needle electrodes and postcricoid surface electrodes. Though these are more easily accessible and easy to troubleshoot, they prevent higher risk of trauma with displacement and face impaired accuracy. Supplemented by its established position within existing clinical workflows, ETT electrodes remain the gold standard (Barczynski, 2013).
+        </p>
+        <image-component tag="image" source="assets/recording_solutions.png"
+          subtitle="Figure 10: Recording electrodes"></image-component>
+        <p>
+          Given our focus on real-time continuous stimulation of the RLN that can be easily integrated into existing workflows while increasing signal reliability and ease of clinical workflow, and our limited timeline of one year, we have chosen to preserve the ETT as the recording interface, focusing on refining it to improve signal and feedback to surgeons while accommodating c-IONM capabilities.
+        </p>
       </div>
     </div>
 

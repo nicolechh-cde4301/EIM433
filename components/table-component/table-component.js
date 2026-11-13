@@ -1,16 +1,14 @@
-//template
-new gridjs.Grid({
-  columns: ["Name", "Email", "Phone Number"],
-  data: [
-    ["John", "john@example.com", "(353) 01 222 3333"],
-    ["Mark", "mark@gmail.com", "(01) 22 888 4444"],
-    ["Eoin", "eoin@gmail.com", "0097 22 654 00033"],
-    ["Sarah", "sarahcdd@gmail.com", "+322 876 1233"],
-    ["Afshin", "afshin@mail.com", "(353) 22 87 8356"],
-  ],
-}).render(document.getElementById("table-1"));
 
-// Table 1
+new gridjs.Grid({
+  columns: ["Term", "Interpretation"],
+  data: [
+    ["reliably assess nerve function", "minimise misleading signals caused by ETT displacement and weak electrode-tissue contact"],
+    ["timely", "provide rapid and continuous information on nerve function"],
+    ["actionable", "provide easily interpretable feedback that helps surgeons identify root cause and determine the appropriate next step"],
+    ["existing surgical workflows", "surgeon training and existing protocols, equipment used"]
+  ],
+}).render(document.getElementById("table2"));
+
 new gridjs.Grid({
   columns: [
     "Stage", "Step", 
