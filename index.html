@@ -39,7 +39,7 @@
 
     <!-- This is the team member component use to display details about your team members -->
     <div class="team-member-wrapper">
-      <team-member avatar="assets/blackranger.png" name="Roopashini Sivananthan" department="Biomedical Engineering"
+      <team-member avatar="assets/roopa.png" name="Roopashini Sivananthan" department="Biomedical Engineering"
         year="National University of Singapore"></team-member>
       <team-member avatar="assets/nicole.jpg" name="Chong Hui Hsuen Nicole" department="Biomedical Engineering"
         year="National University of Singapore"></team-member>
@@ -147,7 +147,7 @@
           The thyroid gland controls the body’s metabolism, energy and growth, and is removed via thyroidectomies for patients with thyroid cancers, goiters, Graves disease and thyroid nodules. Thyroid cancer accounts for the bulk of cases due to its high prevalence, as the second most common cancer in females between 25 and 49 years old (NCCS, 2026), and almost 95% of cases requiring surgery as an effective treatment option (Gomez-Saiz, 2013). The recurrent laryngeal nerve (RLN) is an important nerve that controls voice, breathing and swallowing functions through activation of the vocalis muscle. It is a key nerve at risk during thyroidectomies due its close positioning posterior to the thyroid (Figure 1), with an injury rate of about 8.2% in Singapore (Soong et al., 2026). The presence of large tumours in thyroid cancer can obstruct the surgeon’s field view of the RLN, increasing the risk of injury. 
         </p>
         <image-component tag="image" source="assets/thyroid.jpg"
-          subtitle="Figure 1: Anatomy of thyroid"></image-component>
+          subtitle="Figure 1. Anatomy of thyroid"></image-component>
         <p>
           RLN injuries can be temporary or permanent, with a permanent injury rate of 1%, and can either be unilateral or bilateral. While unilateral RLN injury can cause swallowing difficulties and voice changes (Culp & Patel, 2023), bilateral injury can cause serious complications like respiratory distress (Culp & Patel, 2023). RLN injury can be classified into two subtypes: type I (segmental injury) or type II (global injury). Type I injuries account for 70% of cases, are often caused by clamping, traction, compression or thermal injury, and have the potential to be corrected intraoperatively if the clip, suture, vessel or fibrotic band entrapping the nerve is removed on time (Wu et al., 2014).
         </p>
@@ -155,9 +155,9 @@
           Intra-operative nerve monitoring (IONM) systems guide surgical decision making during thyroidectomies through determination of RLN identity and functional intactness, so surgeons can preserve the RLN or to change their operative course accordingly. To date, there is only one IONM system that is widely distributed worldwide — Medtronic’s Neural Integrity Monitor (NIM). Since the RLN controls the vocalis muscle, IONM determines RLN functional intactness by 1) electrical stimulation of the RLN and 2) measurement of the action potential fired by the vocalis muscle as a result of RLN stimulation. The mode of IONM commonly used in Singaporean hospitals is intermittent-IONM (i-IONM). The i-IONM set-up and protocol is detailed below:
         </p>
         <image-component tag="image" source="assets/ionm_workflow1.png"
-          subtitle="Table showing IONM pre-operative set-up and protocol"></image-component>
+          subtitle="Table 1. IONM pre-operative set-up and protocol"></image-component>
         <image-component tag="image" source="assets/ionm_workflow.png"
-          subtitle="Figure 2: IONM workflow"></image-component>
+          subtitle="Figure 2. IONM workflow"></image-component>
       </div>
 
       <div id="sub-section-1-header-2">
@@ -173,7 +173,7 @@
           to (Figure 3). 
         </p>
         <image-component tag="image" source="assets/vagusnerve.png"
-          subtitle="Figure 3: c-IONM system"></image-component>
+          subtitle="Figure 3. c-IONM system"></image-component>
         <p>
           Since this electrode is securely positioned for RLN stimulation 
           throughout the surgery, it is able to automatically stimulate the RLN and 
@@ -198,7 +198,7 @@
           can only be done by estimation as the contact point of the electrodes is not 
           visible to the surgeon. This troubleshooting protocol is executed in up to 23% 
           of surgeries, adding 5-10 minutes to total surgery time (Ansari et al., 2024). 
-          A survey we conducted with 30 surgeons similarly showed ETT displacement to be 
+          A <a href="#Survey with surgeons">survey we conducted with 30 surgeons</a> similarly showed ETT displacement to be 
           among the top 3 technical challenges faced during IONM operation. 
         </p>
         <video-component tag="False negative signals" source="https://youtube.com/embed/XZrJoHrcfj4"
@@ -251,8 +251,9 @@
         <p><br>
           The key terms are defined below:
         </p>
-        <table-component subtitle="Definitions of key terms">
+        <table-component subtitle="Table 2. Definitions of key terms" title="Table 2. Definitions of key terms">
           <div id="table2"></div>
+        <p style="text-align: center;"><i>Table 2. Definitions of key terms</i></p>
         </table-component>
 
       </div>
@@ -290,9 +291,9 @@
           We modelled our persona (Figure 9) based on one of our clinical mentors, Dr. Joel Lau, who is representative of a senior demographic of surgeons who have already undergone their training as a Head & Neck specialists and routinely use i-IONM and not c-IONM during thyroidectomies. His key gains, pains, and jobs to be done are shown below.
         </p>
         <image-component tag="image" source="assets/persona.png"
-          subtitle="Figure 9. Persona"></image-component>
+          subtitle="Figure 9. Persona"></image-component><br>
         <image-component tag="image" source="assets/value prop.png"
-          subtitle="Persona"></image-component>
+          subtitle="Table 3. Persona gains, pains and jobs to be done"></image-component>
 
         
       </div>
@@ -341,7 +342,7 @@
           Upon analysis from primary and secondary review, we formed our needs criteria encompassing both must-haves and good-to-haves along with clear justifications and alignment to our problem statement. 
         </p>
         <image-component tag="image" source="assets/design criteria.png"
-          subtitle="Design criteria"></image-component>
+          subtitle="Table 4. Design criteria"></image-component>
         <p>
           Overall, our must-have criteria aim to propose a new mechanism to assess nerve function while providing surgeons a robust system that can both detect and provide corrective actions on how to improve the signal obtained. It also gives surgeons a proactive solution that prevents ETT displacement while preventing disruptions to overall workflows during surgeries. 
         </p>
@@ -382,7 +383,7 @@
           <b>2. Designing solutions</b> - To fabricate solutions that prevent ETT displacement, improve contact area, measure and communicate signals effectively so as to address gaps in current solutions 
         </p>
         <image-component tag="image" source="assets/questions.png"
-          subtitle="Initial prototyping plan"></image-component>
+          subtitle="Table 5. Initial prototyping plan"></image-component>
       </div>
 
       <div id="sub-section-5-header-1">
@@ -410,7 +411,7 @@
         <image-component tag="image" source="assets/silicone.png"
           subtitle="Figure 18. Silicone vocal cords"></image-component>
         <p>
-          While the texture mimics real vocal ligaments, we had to integrate them together by using toothpick and rubber bands to secure the ligaments with the rest of the model (Figure 19). This helped to seal the gaps and form a proper closing mechanism. Future investigation will include a pneumatic pump to control and identify the amplitude of movements and match the signal of a real vocal cord movement upon stimulation of RLN. 
+          While the texture mimics real vocal ligaments, we had to integrate them together by using toothpick and rubber bands to secure the ligaments with the rest of the model (Figure 19). This helped to seal the gaps and form a proper closing mechanism. Future investigation will include a pneumatic pump to control, identify the amplitude of movements that matches the signal of a real vocal cord movement upon stimulation of RLN. 
         </p>
         <video-component tag="video" source="https://youtube.com/embed/7htqKR0bMUA"
           subtitle="Figure 19. Simulating vocal cord movement"></video-component>
@@ -423,7 +424,7 @@
           Currently, signals from ETT are measured via electromyography (EMG) activity from the movement of vocal ligaments in contact with the recording electrodes. We hope to explore other quantifiable detection methods to assess whether the displacement has occurred. The two possible methods tried were using distance displacement and pressure contact sensors. 
         </p>
         <p>
-          Firstly, a flex sensor was attached to the top half of the ETT secured using an adhesive glue (Figure 20). Flex sensor works as a variable resistor whose electrical resistance changes as the bending movement increases. Similarly, we were able to obtain variable readings as the tube was being bent. However, using a flex sensor is limited in its measurement for displacements occurring in the x and y directions and thus this method cannot be implemented on its own. 
+          Firstly, a flex sensor was attached to the top half of the ETT secured using an adhesive glue (Figure 20). Flex sensor works as a variable resistor whose electrical resistance changes as the bending movement increases. Similarly, we were able to obtain variable readings as the tube was being bent. However, using a flex sensor is limited in its measurement for displacements occurring in x, y and rotational directions. Thus, this could be coupled with other sensors such as magnetic or camera-based displacement trackers. 
         </p>
         <image-component tag="image" source="assets/flex.png"
           subtitle="Figure 20. Flex sensor attached to ETT"></image-component>
@@ -459,7 +460,7 @@
           Hence, our final iteration consists of a <a href="#Arduino Code used for traffic light bulb feedback">‘traffic light’ system</a> (Figure 24) where a green light indicates a good signal with minimal ETT displacement, a yellow signal signals to surgeons that an adjustment of ETT by Xmm is needed while a red signal alerts of a very large ETT displacement, possibly causing loss of contact between vocal cords and recording electrodes. 
         </p>
         <image-component tag="image" source="assets/traffic.png"
-          subtitle="Figure 24. Traffic light feedback"></image-component>
+          subtitle="Figure 24. Traffic light system"></image-component>
       </div>
 
       <div id="sub-section-5-header-4">
@@ -467,15 +468,17 @@
         <p>
           While methods of ETT displacements are explored, we aim to also look at ways to prevent ETT displacement. Hence, the first way includes the addition of an inflatable cuff to further secure the ETT to the trachea, thereby enhancing surface contact. Having a real to-scale model of the trachea had allowed us to investigate the cuff distance from the electrodes affecting its displacement, though this is an estimate due to varying anatomical structure of patients. 
         </p>
+        <video-component tag="video" source="https://youtube.com/embed/JsVUtnQmE4U"
+          subtitle="Figure 25. Inflatable cuff"></video-component>
         <p>
-        Another way looks at securing the ETT from the top via a head strap which serves as a better alternative compared to current methods of wrapping in terms of promoting stability. However, this method must be complemented with an <a href="#Arduino Code used for interface">interface</a> placed at the head strap, which is line to the surgeon's field of view (Figure 25). The surgeons are then able to interpret the signals received through the colour coded system and perform necessary corrective actions. 
+        Another way looks at securing the ETT from the top via a head strap which serves as a better alternative compared to current methods of wrapping in terms of promoting stability. However, this method must be complemented with an <a href="#Arduino Code used for interface">interface</a> placed at the head strap, which is line to the surgeon's field of view (Figure 26). The surgeons are then able to interpret the signals received through the colour coded system and perform necessary corrective actions. 
         </p>
         <image-component tag="image" source="assets/headstrap.png"
-          subtitle="Figure 25. Head strap to secure ETT"></image-component>
-        <p>
-          Our proposed prototyping plans to explore the weaknesses of the two methods are shown below.
-        </p>
-      </div>
+          subtitle="Figure 26a. Head strap to secure ETT"></image-component>
+        <br>
+        <image-component tag="image" source="assets/Traffic light interface.png"
+          subtitle="Figure 26b. Traffic light interface display"></image-component>
+        </div>
 
       <div id="sub-section-5-header-5">
         <h3>5.5. Continuous IONM methods </h3>
@@ -483,12 +486,12 @@
           Among the c-IONM methods, we aim to optimise stimulation via LAR and trans-tracheal stimulation via APS insertion into ETT, as they are c-IONM methods that make use of the ETT and integrate well with current workflows and enable continuous monitoring of nerve assessment. Their strengths and weaknesses for optimisation are shown here.
         </p>
         <image-component tag="image" source="assets/ETTcIONM.png"
-          subtitle="ETT-cIONM methods"></image-component>
+          subtitle="Table 6. ETT-cIONM methods"></image-component>
         <p>
           Our proposed prototyping plans to explore the weaknesses of the two methods are shown below.
         </p>
         <image-component tag="image" source="assets/prototyping_plan.png"
-          subtitle="Prototyping plan"></image-component>
+          subtitle="Table 7. Prototyping plan"></image-component>
       </div>
       
       <div id="sub-section-5-header-6">
@@ -511,7 +514,7 @@
           When gathering feedback on which of the two c-IONM methods using ETT to explore, surgeons were more receptive to the idea of stimulation via the LAR reflex for three reasons.
         </p>
         <image-component tag="image" source="assets/feedback.png"
-          subtitle="User feedback"></image-component>
+          subtitle="Table 8.User feedback"></image-component>
         <p>
           Surgeons found the feedback due ETT displacements to be useful indicators, but that there may be challenges in characterising false signals due to various contributing factors apart from ETT displacements such as poor contact surface area, noise due to electrical interference, traction etc.  
         </p>
@@ -527,11 +530,14 @@
         </p>
         <p>While our existing prototyping shows the feasibility of flex sensors and a light-based system to feedback on extent of ETT displacement, it needs to be integrated with a more empirical threshold indicating the amount of electrode displacement that corresponds with LOS and be tested to show its performance in reporting signal quality during different surgical maneuvers in thyroidectomy. This can be done by expanding our vocal cord model to include a mockup of the patient’s neck and head to simulate the repositioning that is performed during surgery. 
         </p>
-        <p> Our <a href="#Prototyping plan details">detailed project plan</a> is shown in the Gantt chart below (Figure 26).
+        <p> Our <a href="#Prototyping plan details">detailed project plan</a> is shown in the Gantt chart below (Figure 27).
         </p>
         <image-component tag="image" source="assets/gantt chart.png" 
-        subtitle="Figure 26. Gantt chart"></image-component>
+        subtitle="Figure 27. Gantt chart"></image-component>
+        <br>
       </div>
+    
+      <p>Word count: 3775</p>
 
     
     <!-- This is an example of how you can use the references component to create references -->
@@ -600,7 +606,20 @@
     <div id="appendix" class="appendix">
       <sl-divider></sl-divider>
       <h2>Appendix</h2>
-      
+      <p><u>Section 1.2.2: Signal Unreliability</u></p>
+      <div id="Survey with surgeons">
+        <p><b>a. Survey with surgeons</b></p>
+        <p>
+          We conducted a survey with 30 Head and Neck Surgeons both locally and globally with experience in thyroidectomies and the following shows the results of their experience with i-IONM and c-IONM:
+        </p>
+        <image-component tag="image" source="assets/survey1.png"
+        subtitle="Top procedures where IONM is used"></image-component><br>
+        <image-component tag="image" source="assets/survey2.png"
+        subtitle="Surgeons' main reasons for using IONM"></image-component><br>
+        <image-component tag="image" source="assets/survey3.png"
+        subtitle="Surgeons' main technical challenges encountered during IONM"></image-component>
+      </div>
+      <br>
       <p><u>Section 1.4 Stakeholder analysis</u></p>
       <div id="Reasons to accept">
         <p><b>a. Reasons to accept</b></p>
